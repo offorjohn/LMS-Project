@@ -4,11 +4,14 @@ import Heading from "./utils/Heading";
 import Header from "./components/Header";
 
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface Props {}
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Page: FC<Props> = (props) => {
   const [open, setOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [activeItem, setActiveItemW] = useState(0);
   return (
     <div>
        <Heading

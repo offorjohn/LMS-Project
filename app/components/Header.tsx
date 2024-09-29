@@ -11,6 +11,7 @@ type Props = {
 
 const Header: FC<Props> = ({activeItem}) => {
     const [active, setActive] = useState(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [openSidebar, setOpenSidebar] = useState(false);
 
     if (typeof window !== "undefined"){
