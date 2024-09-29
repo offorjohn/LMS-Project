@@ -50,7 +50,8 @@ const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
       </div>
       {isMobile && (
         <div className="800px:hidden mt-5">
-          <div className="w-full text-center py-6">
+            <div className="w-full text-center py-6">
+          
            {
             navItemsData && navItemsData.map((i, index) => (
                 // eslint-disable-next-line react/jsx-key
@@ -62,6 +63,7 @@ const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
                       : "dark:text-white text-black"
                   } block py-5 text-[18px] px-6 font-Poppins font-[400]`}
                   >
+                    {i.name}
                 </span>
               </Link>
             ))

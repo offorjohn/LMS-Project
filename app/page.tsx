@@ -2,6 +2,7 @@
 import React, {FC, useState} from "react";
 import Heading from "./utils/Heading";
 import Header from "./components/Header";
+// import Hero from "./components/Route/Hero";
 
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -25,6 +26,7 @@ const Page: FC<Props> = (props) => {
         activeItem={activeItem}
        
        />
+     
     </div>
   )
 }
