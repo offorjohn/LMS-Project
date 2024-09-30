@@ -1,7 +1,7 @@
 import { styles } from "@/app/styles/style";
 import React, { FC, useRef, useState } from "react";
-import { Toast } from "react-hot-toast";
-import { VscWorkspaceTrusted, VscWorkspaceUntrusted } from "react-icons/vsc";
+// import { Toast } from "react-hot-toast";
+import { VscWorkspaceUntrusted } from "react-icons/vsc";
 
 type Props = {
   setRoute: (route: string) => void;

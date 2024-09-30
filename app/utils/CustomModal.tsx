@@ -3,6 +3,7 @@ import {Modal, Box} from "@mui/material";
 
 
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = {
     open: boolean;
     setOpen: (open: boolean) => void;

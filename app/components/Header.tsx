@@ -32,6 +32,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClose = (e: any) => {
     if (e.target.id === "screen") {
       {
