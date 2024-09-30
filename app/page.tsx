@@ -5,14 +5,12 @@ import Header from "./components/Header";
  import Hero from "./components/Route/Hero";
 
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface Props {}
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Page: FC<Props> = (props) => {
   const [open, setOpen] = useState(false);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [activeItem, setActiveItemW] = useState(0);
+  const [activeItem, setActiveItem] = useState(0);
+  const [route, setRoute] = useState("Login");
   return (
     <div>
        <Heading
@@ -24,6 +22,8 @@ const Page: FC<Props> = (props) => {
         open={open}
         setOpen={setOpen}
         activeItem={activeItem}
+        setRoute={setRoute}
+        route={route}
        
        />
        <Hero/>  
