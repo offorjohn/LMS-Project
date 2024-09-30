@@ -3,10 +3,9 @@ import Link from "next/link";
 import React, { FC } from "react";
 import { BiSearch } from "react-icons/bi";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 type Props = {};
 
-const Hero: FC<Props> = (props) => {
+const Hero: FC<Props> = () => {
   return (
     <div className="w-full 1000px:flex items-center">
       <div className="flex items-center justify-center w-full h-[100vh]">
