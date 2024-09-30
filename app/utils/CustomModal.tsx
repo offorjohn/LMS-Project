@@ -3,12 +3,13 @@ import {Modal, Box} from "@mui/material";
 
 
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = {
     open: boolean;
     setOpen: (open: boolean) => void;
-    activeItem: any;
-    component: any;
+    activeItem:  unknown;  // Use 'unknown' if you don't know the structure yet
+
+    component: unknown;  // Use 'unknown' if you don't know the structure yet
+
     setRoute?: (route: string) => void;
 
 }

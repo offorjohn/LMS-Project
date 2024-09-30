@@ -3,9 +3,9 @@ import React, {FC, useState} from "react";
 import Heading from "./utils/Heading";
 import Header from "./components/Header";
  import Hero from "./components/Route/Hero";
+import { Props } from "next/script";
 
 
-interface Props {}
 
 const Page: FC<Props> = (props) => {
   const [open, setOpen] = useState(false);
