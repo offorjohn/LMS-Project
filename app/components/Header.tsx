@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt3, HiOutlineUserCircle } from "react-icons/hi";
 import CustomModal from "../utils/CustomModal";
 import Login from "../components/Auth/Login";
 import SignUp from "../components/Auth/SignUp";
-import Verification from "../components/Auth/Verification";
+import Verification from "../components/Auth/Verification"
 
 type Props = {
   open: boolean;
@@ -32,7 +32,6 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
     });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClose = (e: any) => {
     if (e.target.id === "screen") {
       {
@@ -143,6 +142,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
           )}
         </>
       )}
+      Verification
     </div>
   );
 };
