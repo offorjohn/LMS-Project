@@ -6,7 +6,9 @@ import {Modal, Box} from "@mui/material";
 type Props = {
     open: boolean;
     setOpen: (open: boolean) => void;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     activeItem: any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     component: any;
     setRoute?: (route: string) => void;
 
