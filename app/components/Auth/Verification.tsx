@@ -1,7 +1,7 @@
 import { styles } from "@/app/styles/style";
 import { useActivationMutation } from "@/redux/features/auth/authApi";
 import React, { FC, useEffect, useRef, useState } from "react";
-import toast, { Toast } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { VscWorkspaceUntrusted } from "react-icons/vsc";
 import { useSelector } from "react-redux";
 
@@ -17,7 +17,12 @@ type VerifyNumber = {
 };
 
 const Verification: FC<Props> = ({ setRoute }) => {
-  const {token} = useSelector((state:any) => state.auth);
+
+  
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { token } = useSelector((state: any) => state.auth);
+
+
   const [activation, {isSuccess, error}] = useActivationMutation();
 
   const [InvalidError, setInvalidError] = useState<boolean>(false);
@@ -28,6 +33,7 @@ const Verification: FC<Props> = ({ setRoute }) => {
     };
     if(error){
         if("data" in error){
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const errorData = error as any;
             toast.error(errorData.data.message);
             setInvalidError(true);
@@ -35,7 +41,7 @@ const Verification: FC<Props> = ({ setRoute }) => {
             console.log('An error occured:', error);
         }
     }
-  }, [isSuccess, error])
+  }, [isSuccess, error, setRoute])
   const inputRefs = [
     useRef<HTMLInputElement>(null),
 

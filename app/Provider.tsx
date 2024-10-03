@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import {store} from "../redux/store";
 
 interface ProvidersProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     children: any;
 }
 

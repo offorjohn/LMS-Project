@@ -33,11 +33,11 @@ const Signup: FC<Props> = ({ setRoute }) => {
     }
     if(error){
         if("data" in error){
-            const errorData = error as any;
-            toast.error(errorData.data.message);
+            const errorData = '';
+            toast.error(errorData);
         }
     }
-  }, [isSuccess, error])
+  }, [isSuccess, error, data?.message, setRoute])
 
   const formik = useFormik({
     initialValues: { name: "", email: "", password: "" },
